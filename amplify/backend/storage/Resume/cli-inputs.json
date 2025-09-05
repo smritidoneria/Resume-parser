@@ -1,0 +1,10 @@
+{
+  "resourceName": "Resume",
+  "tableName": "ResumesTable",
+  "partitionKey": {
+    "fieldName": "resumeId",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}

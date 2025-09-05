@@ -1,6 +1,6 @@
 projects:
   resumeparser:
-    schemaPath: src/graphql/schema.json
+    schemaPath: amplify/backend/api/resumeparser/build/schema.graphql
     includes:
       - api
     excludes:

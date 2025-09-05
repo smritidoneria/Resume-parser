@@ -1,20 +1,33 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-resumeparser-dev-112618-authRole",
-      "UnauthRoleArn": "arn:aws:iam::924932257059:role/amplify-resumeparser-dev-112618-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::924932257059:role/amplify-resumeparser-dev-112618-authRole",
-      "Region": "us-west-2",
-      "DeploymentBucketName": "amplify-resumeparser-dev-112618-deployment",
-      "UnauthRoleName": "amplify-resumeparser-dev-112618-unauthRole",
-      "StackName": "amplify-resumeparser-dev-112618",
-      "StackId": "arn:aws:cloudformation:us-west-2:924932257059:stack/amplify-resumeparser-dev-112618/4658ac80-1a6c-11ed-b129-062fe4ed2311",
-      "AmplifyAppId": "d1br5czboe0nzc"
+      "AuthRoleName": "amplify-resumeparser-dev-c2109-authRole",
+      "UnauthRoleArn": "arn:aws:iam::286218346647:role/amplify-resumeparser-dev-c2109-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::286218346647:role/amplify-resumeparser-dev-c2109-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-resumeparser-dev-c2109-deployment",
+      "UnauthRoleName": "amplify-resumeparser-dev-c2109-unauthRole",
+      "StackName": "amplify-resumeparser-dev-c2109",
+      "StackId": "arn:aws:cloudformation:ap-south-1:286218346647:stack/amplify-resumeparser-dev-c2109/ec54a070-8365-11f0-b1bd-021cfde0440f",
+      "AmplifyAppId": "d1dd02lvjue4pu"
     },
     "categories": {
       "auth": {
-        "resumeparsere8c1a466": {},
-        "true": {}
+        "resumeparser1cdeec9e": {},
+        "resumeparser9fca6617": {}
+      },
+      "function": {
+        "S3Triggerdbd87a4b": {
+          "deploymentBucketName": "amplify-resumeparser-dev-c2109-deployment",
+          "s3Key": "amplify-builds/S3Triggerdbd87a4b-5976307a586944747961-build.zip"
+        }
+      },
+      "storage": {
+        "s3e4f2c809": {},
+        "Resume": {}
+      },
+      "api": {
+        "resumeparser": {}
       }
     }
   }

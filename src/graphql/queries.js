@@ -41,7 +41,6 @@ export const listResumes = /* GraphQL */ `
         # _lastChangedAt
       }
       nextToken
-      startedAt
     }
   }
 `;
@@ -73,7 +72,6 @@ export const syncResumes = /* GraphQL */ `
         _lastChangedAt
       }
       nextToken
-      startedAt
     }
   }
 `;

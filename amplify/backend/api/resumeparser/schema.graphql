@@ -1,10 +1,12 @@
-type Resume @model @auth(rules: [{allow: public}]) {
-  id: ID!
-  name: String!
+type Resume
+  @model
+  @auth(rules: [{ allow: public, provider: apiKey }]) {
+  resumeId: ID!
+  name: String
   phone: String
   email: String
   education: String
   experience: String
   skills: String
+  rawText: String
 }
- 

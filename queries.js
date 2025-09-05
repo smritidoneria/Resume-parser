@@ -2,8 +2,8 @@
 // this is an auto generated file. This will be overwritten
 
 export const getResume = /* GraphQL */ `
-  query GetResume($resumeId: ID!) {
-    getResume(resumeId: $resumeId) {
+  query GetResume($id: ID!) {
+    getResume(id: $id) {
       resumeId
       name
       phone
@@ -12,6 +12,10 @@ export const getResume = /* GraphQL */ `
       experience
       skills
       rawText
+      id
+      createdAt
+      updatedAt
+      __typename
     }
   }
 `;
@@ -31,40 +35,13 @@ export const listResumes = /* GraphQL */ `
         experience
         skills
         rawText
-      }
-      nextToken
-    }
-  }
-`;
-
-export const syncResumes = /* GraphQL */ `
-  query SyncResumes(
-    $filter: ModelResumeFilterInput
-    $limit: Int
-    $nextToken: String
-    $lastSync: AWSTimestamp
-  ) {
-    syncResumes(
-      filter: $filter
-      limit: $limit
-      nextToken: $nextToken
-      lastSync: $lastSync
-    ) {
-      items {
         id
-        name
-        phone
-        email
-        education
-        experience
-        skills
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
+        __typename
       }
       nextToken
+      __typename
     }
   }
 `;
