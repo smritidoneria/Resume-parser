@@ -5,10 +5,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import FileUpload from './components/FileUpload';
 import ResumeViewer from './ResumeViewer';
+import Favorites from './components/Favorites';
 import Home from './Home';
-import { Sidebar } from './components/Sidebar';
+import  {Sidebar}  from './components/Sidebar';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import YoutubeLinks from './components/YoutubeLinks.js';
 
 import Amplify from "aws-amplify";
 import awsExports from "./aws-exports";
@@ -42,6 +44,11 @@ function App() {
             <Route path="/" element={<FileUpload />} />
             <Route path="/Upload" element={<FileUpload />} />
             <Route path="/Search" element={<ResumeViewer />} />
+            <Route path="/Favorites" element={<Favorites />} />
+            <Route path="/youtube-links" element={<YoutubeLinks />} />
+
+
+
           </Routes>
         </div>
       </Router>
